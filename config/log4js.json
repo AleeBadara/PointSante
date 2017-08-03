@@ -1,0 +1,24 @@
+{
+    "appenders": [
+        {
+            "type": "dateFile",
+            "filename": "log/access.log", 
+            "pattern": "-yyyy-MM-dd",
+            "category": "http"
+        },
+        {
+            "type": "dateFile",
+            "filename": "log/app.log",  
+            "pattern": "-yyyy-MM-dd",
+            "numBackups": 3
+        },
+        {
+            "type": "logLevelFilter",
+            "level": "ERROR",
+            "appender": {
+                "type": "dateFile",
+                "filename": "log/errors.log" 
+            }
+        }
+    ]
+}

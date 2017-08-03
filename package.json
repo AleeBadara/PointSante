@@ -1,0 +1,31 @@
+{
+  "name": "pointsante_node_app",
+  "version": "1.0.0",
+  "description": "Application PointSante en NodeJs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node -r dotenv/config index.js",
+    "test": "export NODE_ENV=test || SET \"NODE_ENV=test\" && mocha -r dotenv/config test/*.js",
+    "test-watch": "nodemon --exec \"npm test\""
+  },
+  "author": "ABM",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^1.0.2",
+    "body-parser": "^1.17.1",
+    "config": "^1.25.1",
+    "crypto-js": "^3.1.9-1",
+    "dotenv": "^4.0.0",
+    "express": "^4.15.2",
+    "jsonwebtoken": "^7.3.0",
+    "log4js": "^1.1.1",
+    "pg": "^6.1.5",
+    "sequelize": "^3.30.3",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "expect": "^1.20.2",
+    "mocha": "^3.2.0",
+    "supertest": "^3.0.0"
+  }
+}
